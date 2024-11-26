@@ -2,7 +2,7 @@ export default {
   HOST: "localhost",
   USER: "root",
   PASSWORD: "pass3022",
-  DB: "importdb",
+  DB: "shopdb",
   dialect: "mysql",
   pool: {
     max: 5,

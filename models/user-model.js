@@ -1,22 +1,4 @@
-// export const userModel =  (sequelize, Sequelize) => {
 
-//   const User = sequelize.define('user', {
-    
-//     username: {
-//       type: Sequelize.STRING,
-      
-//     },
-//     password: {
-//       type: Sequelize.STRING
-//     },
-//     role: {
-//       type: Sequelize.STRING
-//     }
-//   });
-
-//   return User;
-
-// }
 
 export default (sequelize, Sequelize) => {
   // create a model for the tutorial table
@@ -27,6 +9,12 @@ export default (sequelize, Sequelize) => {
     description: {
       type: Sequelize.STRING,
     },
+    counting: {
+      type: Sequelize.INTEGER,
+    },
+    price: {
+      type: Sequelize.INTEGER,
+    },
     published: {
       type: Sequelize.BOOLEAN,
     },
@@ -34,3 +22,4 @@ export default (sequelize, Sequelize) => {
 
   return Tutorial;
 };
+
